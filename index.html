@@ -18,15 +18,15 @@
 	</head>
 	<body>
 		<div class="container-grid">
-			<header>
-				<h1 class="header-heading">
+			<header class="header">
+				<h1 class="header_heading">
 					ToDo <br />
 					Not-ToDo
 				</h1>
 			</header>
 			<main>
-				<input type="text" class="task-input" />
-				<button class="add-task">Add</button>
+				<input type="text" class="task-input" id="input" placeholder="Do it!... ASAP" />
+				<button class="add-task" id="add" onclick="addTask()">Add</button>
 				<h2>Filter & Options</h2>
 				<div class="filter">
 					<input type="radio" name="all" id="filter-all" />
@@ -37,7 +37,7 @@
 					<label for="all">Done</label>
 				</div>
 				<button class="remove">Remove Done ToDo's</button>
-				<ul></ul>
+				<ul id="myTasks"></ul>
 			</main>
 			<footer></footer>
 		</div>
