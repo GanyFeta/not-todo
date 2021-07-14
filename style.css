@@ -1,0 +1,73 @@
+/* ----- General Styling ---- */
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+:root {
+	--font-color: #073b4c;
+	--heading-color: #118ab2;
+	--bg-color: #f5f5f5;
+	--bg-select: #06d6a0;
+}
+html {
+	font-family: "Merriweather Sans", sans-serif;
+	font-size: 20px;
+}
+/* @media screen and (min-width: 768px) {
+	html {
+		font-size: 18px;
+		background-color: var(--bg-color);
+	}
+}
+@media screen and (min-width: 992px) {
+	html {
+		font-size: 20px;
+	}
+} */
+* body {
+	line-height: 1.5rem;
+	color: var(--font-color);
+	margin: 0 auto;
+	padding: 0;
+	width: 70%;
+	border: 1px solid red;
+}
+*::selection {
+	background-color: var(--bg-select);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Karla", sans-serif;
+	font-weight: 700;
+	color: var(--heading-color);
+	margin: 0;
+	font-size: 3rem;
+	line-height: 2.5rem;
+}
+h1 {
+	font-weight: 800;
+	text-align: center;
+	margin: 1rem auto;
+}
+h2 {
+	font-size: 1.5rem;
+}
+
+/*---------- GRID -------*/
+.container-grid {
+	display: grid;
+	row-gap: 1rem;
+
+	align-content: center;
+	justify-content: center;
+}
+.header-heading {
+	justify-content: center;
+	align-content: center;
+	align-self: center;
+	justify-items: center;
+}

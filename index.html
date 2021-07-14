@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Atef Amri - AKA: GanyFeta" />
+		<meta name="description" content="A simple ToDo app to organise tasks" />
+		<link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Karla:wght@700;800&family=Merriweather+Sans:ital,wght@0,500;1,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>To-Do</title>
+	</head>
+	<body>
+		<div class="container-grid">
+			<header>
+				<h1 class="header-heading">
+					ToDo <br />
+					Not-ToDo
+				</h1>
+			</header>
+			<main>
+				<input type="text" class="task-input" />
+				<button class="add-task">Add</button>
+				<h2>Filter & Options</h2>
+				<div class="filter">
+					<input type="radio" name="all" id="filter-all" />
+					<label for="all">All</label>
+					<input type="radio" name="open" id="filter-open" />
+					<label for="all">Open</label>
+					<input type="radio" name="done" id="filter-done" />
+					<label for="all">Done</label>
+				</div>
+				<button class="remove">Remove Done ToDo's</button>
+				<ul></ul>
+			</main>
+			<footer></footer>
+		</div>
+	</body>
+	<script src="script.js"></script>
+</html>
