@@ -15,11 +15,15 @@ function addTask() {
 	// 	<input type="checkbox" />
 	const checkbox = document.createElement("input");
 	checkbox.type = "checkbox";
+	newLi.className = "listItem";
 	newLi.appendChild(checkbox);
-	// css checkbox: .checked
 	// if checkbox is checked line-trhough
 	checkbox.addEventListener("click", function () {
-		newLi.className = "checked";
+		if (newLi.className != "checked") {
+			newLi.className = "checked";
+		} else {
+			newLi.className = "";
+		}
 	});
 
 	//console.log(checkbox.checked);
