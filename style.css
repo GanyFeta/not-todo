@@ -71,10 +71,10 @@ input {
 	border-radius: 0.2rem;
 	margin-right: 0.5rem;
 }
-*:focus {
+/* *:focus {
 	outline: none;
 	box-shadow: 0 0 0 2px var(--focus-color);
-}
+} */
 input[type="text"]:focus {
 	outline: none;
 	background-color: var(--bg-select);
@@ -133,9 +133,18 @@ input[type="checkbox"] {
 	float: right;
 	padding: auto;
 	margin-top: 8px;
+	transform: scale(1.5);
 }
-.checkbox {
-	background-color: var(--header-bg);
-	padding: 1rem;
-	border: 1px solid red;
+
+input[type="radio"] {
+	transform: scale(2);
+	background-color: var(--btn-bg-color);
+	margin-right: 0.5rem;
+}
+/* input[type="radio"]:checked {
+	background-color: var(--btn-bg-color);
+} */
+input[type="radio"]:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px transparent;
 }
