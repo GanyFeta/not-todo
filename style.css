@@ -135,14 +135,13 @@ input[type="checkbox"] {
 	margin-top: 8px;
 	transform: scale(1.5);
 }
-
+.wrapper {
+	padding-bottom: 0.5rem;
+}
 input[type="radio"] {
-	-webkit-transform: scale(2);
-	-moz-transform: scale(2);
 	transform: scale(2);
 	background-color: var(--btn-bg-color);
 	margin-right: 0.5rem;
-	padding-top: 1rem;
 }
 /* input[type="radio"]:checked {
 	background-color: var(--btn-bg-color);
