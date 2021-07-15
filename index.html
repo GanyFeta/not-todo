@@ -29,12 +29,18 @@
 				<button class="add-task" id="add">Add</button>
 				<h2>Filter & Options</h2>
 				<div class="filter">
-					<input type="radio" name="all" id="filter-all" />
-					<label for="all">All</label>
-					<input type="radio" name="open" id="filter-open" />
-					<label for="all">Open</label>
-					<input type="radio" name="done" id="filter-done" />
-					<label for="all">Done</label>
+					<div>
+						<input type="radio" name="radio-filter" value="all" id="filter-all" />
+						<label for="all">All</label>
+					</div>
+					<div>
+						<input type="radio" name="radio-filter" value="open" id="filter-open" />
+						<label for="all">Open</label>
+					</div>
+					<div>
+						<input type="radio" name="radio-filter" value="done" id="filter-done" />
+						<label for="all">Done</label>
+					</div>
 				</div>
 				<button class="remove">Remove Done ToDo's</button>
 				<ul id="myTasks"></ul>
