@@ -9,7 +9,7 @@
 	--font-color: #073b4c;
 	--header-bg: #ef476f;
 	--bg-color: #f5f5f5;
-	--bg-select: #06d6a030;
+	--bg-select: #118ab240;
 	--focus-color: #f5ab00;
 	--btn-bg-color: #118ab2;
 }
@@ -64,9 +64,21 @@ h2 {
 	font-weight: 800;
 	margin-top: 2rem;
 }
+
+input {
+	border-style: none;
+	padding: 0.3rem;
+	border-radius: 0.2rem;
+	margin-right: 0.5rem;
+}
 *:focus {
-	outline: 2px solid var(--focus-color);
-	outline-radius: 0.2rem;
+	outline: none;
+	box-shadow: 0 0 0 2px var(--focus-color);
+}
+input[type="text"]:focus {
+	outline: none;
+	background-color: var(--bg-select);
+	box-shadow: 0 0 0 2px var(--focus-color);
 }
 
 /* ----- Specific Styling------- */
@@ -77,12 +89,16 @@ h2 {
 	align-content: center;
 	justify-content: center;
 }
-button {
+.button {
 	background-color: var(--btn-bg-color);
 	border-style: none;
 	box-shadow: 2px 2px 0px 1px var(--header-bg);
 	border-radius: 0.2rem;
 	padding: 0.3rem;
+}
+.button:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px var(--focus-color), 4px 4px 0px 1px var(--header-bg);
 }
 
 .header {
@@ -99,15 +115,19 @@ button {
 	color: var(--font-color);
 	opacity: 0.5;
 }
-.listItem {
-	text-decoration: none;
+ul {
+	list-style-type: none;
+}
+
+li {
+	padding: 0;
+	background-color: #fff;
+	margin-bottom: 0.5rem;
+	margin-left: 0;
+	border-radius: 0.3rem;
 }
 .checkbox {
 	background-color: var(--header-bg);
 	padding: 1rem;
 	border: 1px solid red;
-}
-input:focus {
-	outline: none;
-	background-color: var(--bg-select);
 }
