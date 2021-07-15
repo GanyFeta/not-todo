@@ -29,7 +29,3 @@ function addTask() {
 	//console.log(checkbox.checked);
 }
 btn.addEventListener("click", addTask);
-
-function checkedIsChecked(event) {
-	console.log(checked);
-}
