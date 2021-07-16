@@ -25,7 +25,13 @@ function addTask() {
 			newLi.className = "";
 		}
 	});
-
-	//console.log(checkbox.checked);
 }
 btn.addEventListener("click", addTask);
+
+// hit enter to add task
+let addToDo = document.querySelector("#input");
+addToDo.addEventListener("keydown", function (event) {
+	if (event.keyCode === 13) {
+		addTask(event);
+	}
+});
